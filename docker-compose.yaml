@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  go:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        BASEPATH: "github.com/gtvar"
+        PACKAGE: "gotest"
+        APP: "hello"
